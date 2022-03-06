@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>image filter</title>
+	<style>
+		body{
+			text-align: center;
+			font-family: arial;
+			
+		}
+		input{
+			display: none;
+		}
+		.tag{
+			font-size: 1.4rem;
+			margin: 1.5rem 0rem;
+			padding: 5px 1.8rem;
+			border-radius: 50px;
+			background-color: #efefef;
+			display: inline-block;
+			color:#060505;
+			cursor: pointer;
+			border: 1px solid #ccc;
+		}
+		img{
+			width: 300px;
+			height: 300px;
+			transition: all.4s ease-in-out;
+		}
+		
+		
+		#Eminem:checked ~ .images > img:not([class *="Eminem"]),
+		#Smokio:checked ~ .images > img:not([class *="Smokio"]),
+		#Snopp:checked ~ .images > img:not([class *="Snopp"]){
+			width: 0px;
+			height: 0px;
+		}
+		
+		#all:checked~.all,
+		#Eminem:checked~.Eminem,
+		#Smokio:checked~.Smokio,
+		#Snopp:checked~.Snopp{
+			background-color: #333333;
+			color: aliceblue;
+		}
+		
+		</style>
+</head>
+
+<body>
+	<h2>filter your images</h2>
+	
+	<input type="radio" id="all" name="radiobtn" checked>
+	<input type="radio" id="Eminem" name="radiobtn">
+	<input type="radio" id="Smokio" name="radiobtn">
+	<input type="radio" id="Snopp" name="radiobtn">
+	
+	<label for="all" class="tag all">All</label>
+	<label for="Eminem" class="tag Eminem">Artists</label>
+	<label for="Smokio" class="tag Smokio">Events</label>
+	<label for="Snopp" class="tag Snopp">Albums</label>
+	
+	<br>
+	
+	<div class="images">
+		
+	<img src="400/rsz_2286722 (1).jpg" class="Eminem">
+	<img src="400/rsz_banner_p2.jpg" class="Smokio">
+	<img src="400/rsz_p-eminem.jpg" class="Eminem">
+	<img src="400/rsz_sweet_lil_pump_nft.jpg" class="Snopp">
+	<img src="400/rsz_whatsapp_image_2021-04-24_at_191656.jpg" class="Eminem">
+	<img src="400/rsz_be815bd0-e275-41a6-bc57-8059b4f90ab7.jpg" class="Smokio">
+	<img src="400/rsz_artworks-000661102210-you0ov-t500x500.jpg" class="Eminem">
+	<img src="400/rsz_blog_post_lollapalooza.jpg" class="Smokio">
+	<img src="400/rsz_334d3257110f87e26ed41123de27ceb7 (1).jpg" class="Eminem">
+	<img src="400/rsz_mixrap.jpg" class="Smokio">
+	<img src="400/rsz_2390724.jpg" class="Eminem">
+	<img src="400/rsz_5f1981a813b6272d875a57e382dd83b4.png" class="Snopp">
+	<img src="400/rsz_1wp3852719.jpg" class="Eminem">
+	<img src="400/rsz_aclne2faal11b_600.jpg" class="Snopp">	
+	<img src="400/rsz_lollapalooza.jpg" class="Smokio">
+	<img src="400/rsz_lilpump-900x900.jpg" class="Eminem">
+	<img src="400/rsz_ai-uba-irisiya-dkm-ft-smokio-mp3-song-download.jpg" class="Snopp">
+	<img src="400/rsz_1027f7507a2d92526055103bf5b5953fe.png" class="Eminem">
+	<img src="400/rsz_895825 (1).jpg" class="Eminem">
+	<img src="400/rsz_beaa26370b1188e6fbc0e9f34b003858.jpg" class="Snopp">
+	<img src="400/rsz_tupac-nawpic-2 (1).jpg" class="Eminem">
+		
+	
+	</div>
+</body>
+</html>

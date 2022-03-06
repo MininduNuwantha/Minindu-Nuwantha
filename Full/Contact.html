@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Hip Hop</title>
+<link rel="stylesheet" href="HipHop.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">	
+</head>
+<body>
+	<section class="sub-header">
+	    <nav>
+		   <a href="HipHop.html"><img src="Images/necklace copy.png"></a>
+		   <div class="nav-links" id="navlinks">
+			  <i class="fa  fa-times" onclick="hidemenu()" ></i> 
+		       <ul>
+			      <li><a href="HipHop.html">Home</a></li>
+				  <li><a href="About.html">About</a></li> 
+				  <li><a href="Cource.html">Cource</a></li>
+				  <li><a href="ifilter.html">Photos</a></li>
+				  <li><a href="">Contact</a></li> 
+			   </ul>
+		   </div>
+			<i class="fa fa-bars" onclick="showmenu()" ></i>
+		</nav>
+	    <h1>Contact Us</h1>
+	</section>
+	<!--------Contact Us------->
+	<section class="location">
+	     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.775927381287!2d80.00539447218038!3d6.844007082631763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae251899012eb33%3A0x4ae500036994ded4!2sHomagama%20Town%2C%20Homagama!5e0!3m2!1sen!2slk!4v1621055607443!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+	<section class="contact-us">
+	    <div class="row">
+		    <div class="contact-col">
+			   <div>
+				   <i class="fa fa-home" ></i>
+				   <span>
+				       <h5>Colombo Road,Rap company</h5>
+					   <p>Maradana,Colombo 10</p>
+				   </span>
+			   </div>
+			    <div>
+				   <i class="fa fa-phone" ></i>
+				   <span>
+				       <h5>+94 702777093</h5>
+					   <p>Every Day,8AM to 6PM</p>
+				   </span>
+			   </div>
+			    <div>
+				   <i class="fa fa-envelope-o" ></i>
+				   <span>
+				       <h5>Hichchi.com</h5>
+					   <p>E-mail us your query</p>
+				   </span>
+			   </div>	
+			</div>
+			<div class="contact-col">
+			    <form action="">
+				   <input type="text" placeholder="Enter Your name" requires>
+				   <input type="email" placeholder="Enter Your Email Address" requires>
+				   <input type="text" placeholder="Enter Your Cource" requires>	
+				   <textarea  rows="8" placeholder="Messege" required></textarea>
+				   <button type="submit" class="hero-btn red-btn">Send Messege</button>	
+				</form>
+			</div>
+		</div>
+	</section>
+
+	
+		<!--------Foooter------->
+	 <footer class="footer">
+	   <div class="container">
+			<div class="row">
+				<div class="footer-col">
+				   <h4>Company</h4>
+				   <ul>
+					   <li><a href="#">about us</a></li>
+					   <li><a href="#">our Services</a></li>
+					   <li><a href="#">Privacy policy</a></li>
+					   <li><a href="#">affliate program</a></li>
+				   </ul>
+				</div>
+				<div class="footer-col">
+				   <h4>get help</h4>
+				   <ul>
+					   <li><a href="#">FAQ</a></li>
+					   <li><a href="#">shipping</a></li>
+					   <li><a href="#">return</a></li>
+					   <li><a href="#">order status</a></li>
+					   <li><a href="#">payment options</a></li>
+				   </ul>
+				</div>
+				<div class="footer-col">
+				   <h4>online shop</h4>
+				   <ul>
+					   <li><a href="#">watch</a></li>
+					   <li><a href="#">bag</a></li>
+					   <li><a href="#">shoes</a></li>
+					   <li><a href="#">dress</a></li>
+				   </ul>
+				</div>
+				<div class="footer-col">
+				   <h4>Follow us</h4>
+				   <div class="social-links">
+					  <a href="#"><i class="fab fa-facebook-f"></i></a>
+					  <a href="#"><i class="fab fa-twitter"></i></a>
+					  <a href="#"><i class="fab fa-instagram"></i></a>
+					  <a href="#"><i class="fab fa-linkedin"></i></a>  
+				   </div>
+				</div>
+		    </div>
+	  </div>
+	 </footer>
+	
+	<!--------Java Script for menu------->
+	<script>
+	    var navlinks = document.getElementById("navlinks");
+		function showmenu(){
+			navlinks.style.right="0";
+		}
+		function hidemenu(){
+			navlinks.style.right="-200px";
+		}
+	
+	</script>
+
+	
+	
+	
+</body>
+</html>
